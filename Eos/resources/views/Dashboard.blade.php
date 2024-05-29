@@ -1,4 +1,7 @@
 <x-navbar/>
 <x-layout>
-    <p>benvenuto alla dashboard</p>
+    <x-aside/>
+    <div class="container ">
+        <x-card/>
+    </div>
 </x-layout>
