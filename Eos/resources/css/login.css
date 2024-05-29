@@ -7,7 +7,7 @@
     padding: 0;    
 }
 
-body {
+.homeLogin, .homeRegister {
     display: flex;
     height: 100vh;
     align-items: center;
@@ -16,10 +16,10 @@ body {
     
 }
 
-main {
+.login, .register{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 68vh;
     padding: 0 50px;
     align-items: center;
     justify-content:space-evenly;
@@ -28,15 +28,23 @@ main {
     background-color:rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(15px);
     box-shadow: 30px 20px 30px 0px #219EBC;
-    
 }
 
-main form {
+.register {
+    height: 90vh;
+}
+
+.login form {
     display: flex;
     flex-direction: column;
 }
 
-main form input {    
+.register form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login form input, .register {    
     margin: 10px 0 ;
     font-size: 0.8rem;
     height: 40px;
@@ -46,7 +54,7 @@ main form input {
     padding-left: 10px;
 }
 
-main form input:focus {
+.login form input:focus {
     outline: 1px solid rgba(151, 157, 160, 0.7);
 }
 
