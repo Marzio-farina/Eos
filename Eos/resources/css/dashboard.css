@@ -66,6 +66,10 @@ nav {
     align-items: center;
 }
 
+.ComandiUser:hover {
+    font-weight: 700;
+}
+
 
 /* Card */
 
@@ -174,4 +178,15 @@ nav {
 
 .ContenitoreDescrizioneIconaCommenti {
     color: var(--ColoreCeleste);
+}
+
+/* aside */
+
+aside > a {
+    text-decoration: none;
+    color: var(--Grigio);
+}
+
+aside > a:hover {
+    font-weight: 800;
 }
