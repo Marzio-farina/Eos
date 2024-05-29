@@ -7,7 +7,9 @@
     padding: 0;    
 }
 
-.homeLogin, .homeRegister {
+/* Login */
+
+.homeLogin {
     display: flex;
     height: 100vh;
     align-items: center;
@@ -16,7 +18,7 @@
     
 }
 
-.login, .register{
+.login {
     display: flex;
     flex-direction: column;
     height: 68vh;
@@ -30,25 +32,15 @@
     box-shadow: 30px 20px 30px 0px #219EBC;
 }
 
-.register {
-    height: 90vh;
-}
-
 .login form {
     display: flex;
     flex-direction: column;
 }
 
-.register form{
-    display: flex;
-    flex-direction: column;
-}
-
-.login form input, .register {    
+.login form input {    
     margin: 10px 0 ;
     font-size: 0.8rem;
     height: 40px;
-    border: none;
     border: 1px solid rgba(151, 157, 160, 0.7);
     border-radius: 15px;
     padding-left: 10px;
@@ -64,4 +56,41 @@ input::placeholder {
 
 #accedi {    
     text-align: center;  
+}
+
+/* Registrati */
+
+.homeRegister {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse, rgba(142, 202, 230,0.7) 20%, #219EBC 100%);
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    height: 68vh;
+    padding: 0 50px;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 5%;    
+    color: rgba(151, 157, 160, 0.7);
+    background-color:rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    box-shadow: 30px 20px 30px 0px #219EBC;
+}
+
+.register form input {    
+    margin: 10px 0 ;
+    font-size: 0.8rem;
+    height: 40px;
+    border: 1px solid rgba(151, 157, 160, 0.7);
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.register form input:focus {
+    outline: 1px solid rgba(151, 157, 160, 0.7);
 }

@@ -4,8 +4,13 @@
             <form method="POST" action="/register">
                 @csrf
                 <div class="mb-3">
-                    <label class="form-label">Username</label>
-                    <input type="text" class="form-control" name="name" value="{{old('name')}}">
+                    <h1>Registrati</h1>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        name="name" 
+                        value="{{old('name')}}"
+                        placeholder="Username">
                     @error('name')
                         <div class="alert alert-danger" role="alert">
                             {{$message}}
@@ -13,8 +18,12 @@
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" name="email" value="{{old('email')}}">
+                    <input 
+                        type="email" 
+                        class="form-control" 
+                        name="email" 
+                        value="{{old('email')}}"
+                        placeholder="Email">
                     @error('email')
                         <div class="alert alert-danger" role="alert">
                             {{$message}}
@@ -22,8 +31,11 @@
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" class="form-control" name="password">
+                    <input 
+                        type="password" 
+                        class="form-control" 
+                        name="password"
+                        placeholder="Password">
                     @error('password')
                         <div class="alert alert-danger" role="alert">
                             {{$message}}
@@ -31,8 +43,11 @@
                     @enderror
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Conferma password</label>
-                    <input type="password" class="form-control" name="password_confirmation">
+                    <input 
+                        type="password" 
+                        class="form-control" 
+                        name="password_confirmation"
+                        placeholder="Conferma password">
                 </div>
                 <button type="submit" id="accedi">Registrati</button>
             </form>
