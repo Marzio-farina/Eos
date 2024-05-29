@@ -2,7 +2,7 @@
     <div class="homeLogin">
         <div class="login">
             <h1>Login</h1>
-            <form method="POST" action="{{route('login')}}">
+            <form method="POST" action="{{route('Dashboard')}}">
                 @csrf
                 <input 
                     type="email" 
