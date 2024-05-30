@@ -1,3 +1,4 @@
+<x-navbar/>
 <x-layout>
     <x-aside/>
     <div class="container">

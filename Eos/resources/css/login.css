@@ -63,3 +63,22 @@ input::placeholder {
     text-align: center;  
 }
 
+#accedi:hover {
+    color: green;
+    font-weight: 600;
+}
+
+.Check_recuperaPassword {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Check_recuperaPassword a {
+    text-decoration: none;
+    color: gray;    
+}
+
+.Check_recuperaPassword a:hover {
+    font-weight: 700; 
+    color: red;
+}
