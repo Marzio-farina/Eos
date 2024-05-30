@@ -42,7 +42,7 @@ body {
     flex-direction: column;
 }
 
-.login form input {    
+#email, #password, #accedi {    
     margin: 10px 0 ;
     font-size: 0.8rem;
     height: 40px;
