@@ -8,8 +8,6 @@
     <title>{{env('APP_NAME')}}</title>
 </head>
 <body>
-    <main>
-        {{$slot}}
-    </main>    
+    {{$slot}}
 </body>
 </html>

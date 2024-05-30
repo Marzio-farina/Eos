@@ -8,6 +8,10 @@
     font-size: 16px;  
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 /* Login */
 
 .homeLogin {
@@ -57,9 +61,5 @@ input::placeholder {
 
 #accedi {    
     text-align: center;  
-}
-
-main {
-    background-color: whitesmoke;
 }
 
