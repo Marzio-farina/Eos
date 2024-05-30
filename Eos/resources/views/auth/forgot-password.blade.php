@@ -5,6 +5,11 @@
                 @csrf
                 <h4>Reset password</h4>
                 <div>
+                    @if (session('status'))
+                        <div class="mb-4 font-medium text-sm text-green-600">
+                            {{ session('status') }}
+                        </div>
+                    @endif
                     <div class="mb-3">
                         <input type="email" class="form-control" name="email" value="{{old('email')}}" placeholder="Email">
                         @error('email')
