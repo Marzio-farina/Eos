@@ -20,7 +20,7 @@ class CreateNewUser implements CreatesNewUsers
     public function create(array $input): User
     {
         Validator::make($input, [
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255','min:3'],
             'email' => [
                 'required',
                 'string',
@@ -29,6 +29,18 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
+        ],[
+            'name.required' => 'Inserisci un Username',
+            'name.min' => 'Inserisci minimo 3 caratteri',
+            'name.string' => 'caratteri non validi',
+            'name.max' => 'caratteri in eccesso',
+            'email.required' => 'Inserisci l\' Email',
+            'email.string' => 'Inserisci dei caratteri validi',
+            'email.email'=> 'Inserisci un email valida',
+            'email.max' => 'caratteri in eccesso',
+            'password.required' => 'Inserisci una password',
+            'password.min'=> 'Inserisci minimo 8 caratteri',
+            'password.confirmed' => 'Le password non combaciano',
         ])->validate();
 
         return User::create([

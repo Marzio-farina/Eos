@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-6">
                         <span>640</span>
-                        <p>In attesa di</p>
+                        <p>In attesa</p>
                     </div>
                     <div class="col-6">
                         <span>1460</span>
