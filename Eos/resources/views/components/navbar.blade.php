@@ -25,7 +25,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li class="UserLoggato">
-                    <a href="#">{{auth()->user()->name}}</a>
+                    <span>{{auth()->user()->name}}</span>
                 </li>
                 <li>
                     <hr class="dropdown-divider">
