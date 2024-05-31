@@ -82,3 +82,17 @@ input::placeholder {
     font-weight: 700; 
     color: red;
 }
+
+/* Passowrd dimenticata */
+
+.torna_indietro_forgot_password {
+    position: absolute;
+    right: 26px;
+    top: 20px;
+    color: black;
+    rotate: 180deg;
+}
+
+.torna_indietro_forgot_password:hover {
+    color: red;
+}
