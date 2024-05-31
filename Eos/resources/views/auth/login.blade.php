@@ -19,7 +19,7 @@
                     @enderror  
                     <div class="Check_recuperaPassword">
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="remember">
                             <label class="form-check-label" for="exampleCheck1">Ricordami</label>
                         </div>
 
