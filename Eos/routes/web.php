@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Providers\FortifyServiceProvider;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [PageController::class,'home'])->name('home');
-Route::get('/Dashboard', [PageController::class,'Dashboard'])->name('Dashboard');
+Route::get('/', [PageController::class,'Dashboard'])->middleware('auth')->name('Dashboard');
