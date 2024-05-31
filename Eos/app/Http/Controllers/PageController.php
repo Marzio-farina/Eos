@@ -11,4 +11,8 @@ class PageController extends Controller
     public function Dashboard () {
         return view('Dashboard');
     }    
+
+    public function impostazioni () {
+        return view('impostazioni');
+    }  
 }
