@@ -3,23 +3,24 @@
         <div class="p-3 SottoContenitoreCardDashboard ContenitoreColoreBlu">
             <a class="SottoContenitoreCardDashboardSopra" href="#">
                 <span class="ContenitoreIconaCardDashboard ContenitoreIconaColoreBLu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                        <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
                     </svg>
                 </span>
                 <span class="ContenitoreDescrizioneIconaCardDashboard ContenitoreDescrizioneColoreBlu">
-                    Ordini
+                    Utenti registrati
                 </span>
             </a>
             <div class="container SottoContenitoreCardDashboardSotto">
                 <div class="row">
                     <div class="col-6">
                         <span>640</span>
-                        <p>In attesa</p>
+                        <p>Standby</p>
                     </div>
                     <div class="col-6">
                         <span>1460</span>
-                        <p>Completato</p>
+                        <p>Confermati</p>
                     </div>
                 </div>
             </div>
