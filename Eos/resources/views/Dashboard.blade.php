@@ -5,7 +5,7 @@
         <livewire:impostazioni/>
     @else
         <div class="container">
-            <x-card/>
+            <x-Dashboard.card/>
         </div>
     @endif
     
