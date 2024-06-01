@@ -24,7 +24,28 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: 2px solid #415a77;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 15px;
+}
+
+.dettagliUtente .row {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.dettagliUtente .row .col-3 .row span {
+    text-align: end;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    
+}
+
+.dettagliUtente .row .col-6 .row span {
+    text-align: start;
+    padding: 20px 0 20px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
 }
