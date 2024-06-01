@@ -10,6 +10,7 @@
 @import 'Dashboard/user/filtraUtenti.css';
 @import 'Dashboard/user/tabellaUtenti.css';
 @import 'Dashboard/user/impostazioniUtente.css';
+@import 'Dashboard/user/modaleImpostazioniUtente.css';
 
 @import 'navbar';
 @import 'navigazione';

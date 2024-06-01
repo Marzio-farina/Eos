@@ -1,0 +1,17 @@
+
+.modal-body {
+    display: flex;
+}
+
+.modal-body p {
+    font-weight: 600;
+}
+
+.modal-body input {
+    text-align: center;
+}
+
+#DatoModale {
+    font-weight: 400;
+    text-align: center;
+}
