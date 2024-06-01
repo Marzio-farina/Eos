@@ -3,9 +3,9 @@
     <div class="menu">
         
     </div>
-
-    <img class="logo" src="./logoGestionaPro.png" alt="Icona">
-
+    <a href="{{route('Dashboard')}}">
+        <img class="logo" src="./logoGestionaPro.png" alt="Icona">
+    </a>
     <div class="opzioni">
         
         <a href="/">
