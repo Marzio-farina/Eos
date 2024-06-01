@@ -4,7 +4,7 @@
         
     </div>
     <a href="{{route('Dashboard')}}">
-        <img class="logo" src="./logoGestionaPro.png" alt="Icona">
+        <img class="logo" src="/logoGestionaPro.png" alt="Icona">
     </a>
     <div class="opzioni">
         
