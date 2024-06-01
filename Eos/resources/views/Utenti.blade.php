@@ -1,5 +1,6 @@
 <x-navbar/>
 <x-layout>
     <x-navigazione/>
-    <x-Utenti.tabella/>    
+    <x-Utenti.tabella/>
+    <livewire:utenti.create/>  
 </x-layout>

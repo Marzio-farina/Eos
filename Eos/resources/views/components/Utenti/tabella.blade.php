@@ -1,4 +1,4 @@
-<div class="container pt-4">
+<div class="container pt-4 ">
     <div class="filtraUtenti">
         <h5>Lista degli utenti</h5>
         <form class="d-flex" role="search">
@@ -35,4 +35,5 @@
             </tbody>
         </table>
     </div>
+    
 </div>
