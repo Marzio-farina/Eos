@@ -10,9 +10,11 @@ class Index extends Component
 {
     use WithPagination;
     
+    public $q = "";
+
     public function render()
     {
-        $users = User::orderBy('created_at','DESC')->paginate(5);
+        $users = User::where('name','LIKE', '%'.$this->q .'%')->orderBy('created_at','DESC')->paginate(5);
         return view('livewire.utenti.index',compact('users'));
     }
 }
