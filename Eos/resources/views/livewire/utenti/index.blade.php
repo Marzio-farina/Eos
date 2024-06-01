@@ -7,6 +7,7 @@
         </form>
     </div>
     <div class="pt-2 ">
+        {{$users->links()}}
         <table class="table table-hover table-bordered">
             <thead>
                 <tr class="fontColonneUser">
