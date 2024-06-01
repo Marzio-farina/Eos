@@ -1,0 +1,56 @@
+
+/* Card colore blu */
+
+.ContenitoreColoreBlu {
+    border-left: 5px solid var(--ColoreBlue);
+}
+
+.ContenitoreIconaColoreBLu {
+    background-color: var(--ColoreBlue); 
+}
+
+.ContenitoreDescrizioneColoreBlu {
+    color: var(--ColoreBlue);
+}
+
+/* Card colore celeste */
+
+.ContenitoreCommenti {
+    border-left: 5px solid var(--ColoreCeleste);
+}
+
+.ContenitoreIconaCommenti {
+    background-color: var(--ColoreCeleste);
+}
+
+.ContenitoreDescrizioneIconaCommenti {
+    color: var(--ColoreCeleste);
+}
+
+/* Card colore verde */
+
+.ContenitoreClienti {
+    border-left: 5px solid var(--ColoreVerde);
+}
+
+.ContenitoreIconaClienti {
+    background-color: var(--ColoreVerde);
+}
+
+.ContenitoreDescrizioneIconaClienti {
+    color: var(--ColoreVerde);
+}
+
+/* Card colore viola */
+
+.ContenitoreReddito {
+    border-left: 5px solid var(--ColoreViola);
+}
+
+.ContenitoreIconaReddito {
+    background-color: var(--ColoreViola);
+}
+
+.ContenitoreDescrizioneIconaReddito {
+    color: var(--ColoreViola);
+}

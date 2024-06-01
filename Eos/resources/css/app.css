@@ -5,9 +5,6 @@
 @import 'Dashboard/dashboard';
 
 @import 'Dashboard/card/card-generica.css';
-@import 'Dashboard/card/card-blu.css';
-@import 'Dashboard/card/card-viola.css';
-@import 'Dashboard/card/card-verde.css';
-@import 'Dashboard/card/card-celeste.css';
+@import 'Dashboard/card/colore.css';
 
 @import 'navbar';
