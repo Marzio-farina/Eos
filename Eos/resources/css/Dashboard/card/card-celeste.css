@@ -1,0 +1,13 @@
+/* Card colore celeste */
+
+.ContenitoreCommenti {
+    border-left: 5px solid var(--ColoreCeleste);
+}
+
+.ContenitoreIconaCommenti {
+    background-color: var(--ColoreCeleste);
+}
+
+.ContenitoreDescrizioneIconaCommenti {
+    color: var(--ColoreCeleste);
+}

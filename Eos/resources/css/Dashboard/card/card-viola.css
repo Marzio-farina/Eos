@@ -1,0 +1,13 @@
+/* Card colore viola */
+
+.ContenitoreReddito {
+    border-left: 5px solid var(--ColoreViola);
+}
+
+.ContenitoreIconaReddito {
+    background-color: var(--ColoreViola);
+}
+
+.ContenitoreDescrizioneIconaReddito {
+    color: var(--ColoreViola);
+}

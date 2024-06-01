@@ -1,0 +1,9 @@
+:root {
+    --ColoreBlue : rgba(25, 118, 210,0.6);
+    --ColoreViola : #7986CB;
+    --ColoreVerde : #4DB6AC;
+    --ColoreCeleste : #4DD0E1;
+    --Sfondo : rgba(240, 240, 240, 0.5);
+    --Grigio : rgb(88, 88, 88);
+    --BiancoCardDashboard : rgb(220, 220, 220);
+}
