@@ -12,7 +12,7 @@
             Dashboard
         </a>
     @elseif (Route::is('impostazioni'))
-        <a href="{{route('Dashboard')}}">
+        <a href="{{route('impostazioni')}}">
             Dashboard
         </a>
         <svg 

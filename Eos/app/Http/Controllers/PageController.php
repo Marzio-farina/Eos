@@ -14,5 +14,9 @@ class PageController extends Controller
 
     public function impostazioni () {
         return view('impostazioni');
-    }  
+    } 
+    
+    public function Utenti () {
+        return view('Utenti');
+    }
 }
