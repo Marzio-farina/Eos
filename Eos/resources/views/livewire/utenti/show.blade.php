@@ -10,11 +10,9 @@
             <span class="separatoreCasisticheUtente"></span>
         </aside>
         <main class="col-9 dettagliUtente">
-            <header>
-                <h6>
-                    Dati anagrafici
-                </h6>
-            </header>
+            <h6>
+                Dati anagrafici
+            </h6>
             <div class="row">
                 <div class="col-3">
                     <div class="row">

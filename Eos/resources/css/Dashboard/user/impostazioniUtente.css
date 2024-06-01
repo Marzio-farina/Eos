@@ -1,6 +1,5 @@
 .pagineUtente {
     background-color: #415a77;
-    height:50vh;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     color: antiquewhite;
@@ -26,6 +25,7 @@
     border: 2px solid #415a77;
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 50px;
 }
 
 .dettagliUtente .row {
@@ -38,8 +38,7 @@
     padding: 20px 0;
     font-weight: 700;
     font-size: 18px;
-    border-bottom: 1px solid gray;
-    
+    border-bottom: 1px solid gray;    
 }
 
 .dettagliUtente .row .col-6 .row span {
