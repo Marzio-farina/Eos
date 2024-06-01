@@ -18,22 +18,16 @@
                 </tr>
             </thead>
             <tbody class="table-group-divider">
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>Otto</td>
-                <td>Otto</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>Otto</td>
-                <td>Otto</td>
-                <td>Otto</td>
-            </tr>
+                @foreach ($users as $user)
+                    <tr>
+                        <th scope="row">{{$user->id}}</th>
+                        <td>{{$user->name}}</td>
+                        <td>{{$user->email}}</td>
+                        <td>Otto</td>
+                        <td>Otto</td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
-    </div>
-    
+    </div>    
 </div>
