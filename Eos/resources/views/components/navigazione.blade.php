@@ -22,7 +22,7 @@
         <a href="{{route('impostazioni')}}">
             Impostazioni
         </a>
-    @elseif (Route::is('Utenti.index'))
+    @elseif ((Route::is('Utenti.index')) or (Route::is('Utente.show')))
         <a href="{{route('Dashboard')}}">
             Dashboard
         </a>
