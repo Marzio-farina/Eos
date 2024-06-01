@@ -1,6 +1,6 @@
 <x-navbar/>
 <x-layout>
-    <x-aside/>
+    <x-navigazione/>
     @if (Route::is('impostazioni'))
         <livewire:impostazioni/>
     @else
