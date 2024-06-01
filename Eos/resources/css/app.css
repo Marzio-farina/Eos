@@ -7,5 +7,7 @@
 @import 'Dashboard/card/card-generica.css';
 @import 'Dashboard/card/colore.css';
 
+@import 'Dashboard/user/filtraUtenti.css';
+
 @import 'navbar';
 @import 'navigazione';
