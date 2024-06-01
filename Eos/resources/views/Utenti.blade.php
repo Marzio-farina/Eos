@@ -1,5 +1,8 @@
 <x-navbar/>
 <x-layout>
     <x-navigazione/>
-    <x-Utenti.tabella/>
+    <div class="container pt-4">
+        <h5>Lista degli utenti</h5>
+        <x-Utenti.tabella/>
+    </div>
 </x-layout>
