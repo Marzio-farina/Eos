@@ -7,9 +7,9 @@
         </form>
     </div>
     <div class="pt-2 ">
-        <table class="table table-striped table-hover table-bordered">
+        <table class="table table-hover table-bordered">
             <thead>
-                <tr>
+                <tr class="fontColonneUser">
                     <th scope="col">ID</th>
                     <th scope="col">Utenti</th>
                     <th scope="col">E-mail</th>
