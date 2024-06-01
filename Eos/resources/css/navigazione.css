@@ -1,0 +1,9 @@
+.navigazione a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+
+.navigazione a:hover {
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+}
