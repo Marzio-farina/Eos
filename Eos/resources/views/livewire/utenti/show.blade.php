@@ -51,9 +51,7 @@
                         <div>
                             <span>{{$user->id}}</span>                                            
                         </div>
-                        <div>
-                            <livewire:utenti.edit :user="$user"/>                            
-                        </div>
+                        <livewire:utenti.edit :user="$user"/> 
                         <div>
                             <span>{{$user->name}}</span>
                             <a>
@@ -83,7 +81,6 @@
             </div>
         </main>        
     </div>
-    {{-- <livewire:utenti.edit :user="$user"/> --}}
 </div>
 
 

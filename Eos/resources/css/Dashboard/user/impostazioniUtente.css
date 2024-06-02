@@ -75,3 +75,7 @@
 .closeImpostazioniUtente:hover {
     color: blue;
 }
+
+.inputUsername {
+    margin-left: 20px;
+}
