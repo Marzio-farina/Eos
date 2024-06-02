@@ -14,14 +14,17 @@
             </a>
             <div class="container SottoContenitoreCardDashboardSotto">
                 <div class="row">
+                    @foreach ($users as $user)
+                        
+                    @endforeach 
                     <div class="col-6">
-                        <span>640</span>
-                        <p>Standby</p>
+                        <span>{{$user->where('is_admin',0)->count()}}</span>
+                        <p>Base</p>
                     </div>
                     <div class="col-6">
-                        <span>1460</span>
-                        <p>Confermati</p>
-                    </div>
+                        <span>{{$user->where('is_admin',1)->count()}}</span>
+                        <p>Admin</p>
+                    </div>                   
                 </div>
             </div>
         </div>

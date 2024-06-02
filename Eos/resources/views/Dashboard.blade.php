@@ -4,8 +4,8 @@
     @if (Route::is('impostazioni'))
         <livewire:impostazioni/>
     @else
-        <div class="container">
-            <x-Dashboard.card/>
+        <div class="container">            
+            <x-Dashboard.card :users="$users"/>
         </div>
     @endif
     
