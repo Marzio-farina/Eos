@@ -47,7 +47,7 @@
                 <div class="row">
                     <div class="col-6">
                         <span>4</span>
-                        <p>Inconcluse</p>
+                        <p>In corso</p>
                     </div>
                     <div class="col-6">
                         <span>2</span>
@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="col-6">
                         <span>4</span>
-                        <p>Carenti</p>
+                        <p>Inconcluse</p>
                     </div>
                     <div class="col-6">
                         <span>2</span>
