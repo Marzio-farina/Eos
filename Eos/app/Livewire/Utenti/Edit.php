@@ -22,6 +22,5 @@ class Edit extends Component
         $this->user->update([
             'name'=>$this->name,
         ]);
-        return view('livewire.utenti.show');
     }
 }
