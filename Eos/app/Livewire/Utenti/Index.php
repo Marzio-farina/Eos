@@ -17,4 +17,8 @@ class Index extends Component
         $users = User::where('name','LIKE', '%'.$this->q .'%')->orderBy('created_at','DESC')->paginate(5);
         return view('livewire.utenti.index',compact('users'));
     }
+
+    public function delete(User $user){
+        $user->delete();
+    }
 }

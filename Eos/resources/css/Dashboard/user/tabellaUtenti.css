@@ -16,6 +16,12 @@
     color: green;
 }
 
+.deleteUser {
+    border: none;    
+    background-color:white ;
+}
+
 .deleteUser:hover {
     color: red;
+    background-color:#fefae0 ;
 }
