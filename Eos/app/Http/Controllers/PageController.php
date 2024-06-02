@@ -3,15 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Http\Request;
+use App\Models\Order;
 
 use function Ramsey\Uuid\v1;
+use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function Dashboard () {
         $users = User::all();
-        return view('Dashboard', compact('users'));
+        $commesseCebat = Order::all();
+        return view('Dashboard', compact('users','commesseCebat'));
     }    
 
     public function impostazioni () {

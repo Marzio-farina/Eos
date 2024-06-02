@@ -4,7 +4,7 @@
     @if (Route::is('impostazioni'))
         <livewire:impostazioni/>
     @else           
-        <x-Dashboard.card :users="$users"/>
+        <x-Dashboard.card :users="$users" :commesseCebat="$commesseCebat"/>
     @endif
     
 </x-layout>

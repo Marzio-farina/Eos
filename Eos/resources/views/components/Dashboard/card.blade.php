@@ -74,11 +74,11 @@
             <div class="container SottoContenitoreCardDashboardSotto">
                 <div class="row">
                     <div class="col-6">
-                        <span>4</span>
+                        <span>{{$commesseCebat->where('stato',1)->count()}}</span>
                         <p>Inconcluse</p>
                     </div>
                     <div class="col-6">
-                        <span>2</span>
+                        <span>{{$commesseCebat->where('stato',3)->count()}}</span>
                         <p>Concluse</p>
                     </div>
                 </div>
