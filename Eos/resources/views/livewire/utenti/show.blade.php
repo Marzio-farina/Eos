@@ -89,7 +89,7 @@
             </div>
         </main>        
     </div>
-    <x-user.modali-impostazione :user="$user"/>
+    <livewire:utenti.edit :user="$user"/>
 </div>
 
 
