@@ -1,5 +1,5 @@
 {{-- Modale per l'Edit dell'Username --}}
-<form wire:submit.prevent="store">
+<form wire:submit.prevent="update">
     <div class="modal" id="EditUsername" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -20,7 +20,10 @@
                         <p id="DatoModale">
                             {{$user->name}}
                         </p>                
-                        <input type="text" name="name" value="{{$user->name}}">
+                        <input type="text" name="name" wire:model.change ="name">
+                        @error('name')
+                            <span>{{$message}}</span>
+                        @enderror
                     </div>            
                 </div>
                 <div class="modal-footer">
