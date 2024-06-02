@@ -38,7 +38,7 @@
 .ContenitoreIconaCardDashboard {
     padding: 5px;
     display: flex;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     align-items: center;
     justify-content: center;
@@ -49,4 +49,9 @@
 .ContenitoreDescrizioneIconaCardDashboard {
     margin-left: 15px;
     font-weight: 600;
+}
+
+.LogoCebat {
+    width: 80px;
+    margin-left: 10px;
 }

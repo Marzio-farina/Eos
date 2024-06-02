@@ -15,15 +15,15 @@
 
 /* Card colore celeste */
 
-.ContenitoreCommenti {
+.ContenitoreColoreCelste {
     border-left: 5px solid var(--ColoreCeleste);
 }
 
-.ContenitoreIconaCommenti {
+.ContenitoreIconaColoreCeleste {
     background-color: var(--ColoreCeleste);
 }
 
-.ContenitoreDescrizioneIconaCommenti {
+.ContenitoreDescrizioneIconaColoreCeleste {
     color: var(--ColoreCeleste);
 }
 

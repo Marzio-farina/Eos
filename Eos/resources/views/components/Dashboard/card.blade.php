@@ -29,33 +29,63 @@
             </div>
         </div>
     </div>
-    {{-- <div class="col-12 col-md-5 col-xl-3">
-        <div class="p-3 SottoContenitoreCardDashboard ContenitoreReddito">
+    <div class="col-12 col-md-5 col-xl-3">
+        <div class="p-3 SottoContenitoreCardDashboard ContenitoreColoreCelste">
             <a class="SottoContenitoreCardDashboardSopra" href="#">
-                <span class="ContenitoreIconaCardDashboard ContenitoreIconaReddito">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-euro" viewBox="0 0 16 16">
-                        <path d="M4 9.42h1.063C5.4 12.323 7.317 14 10.34 14c.622 0 1.167-.068 1.659-.185v-1.3c-.484.119-1.045.17-1.659.17-2.1 0-3.455-1.198-3.775-3.264h4.017v-.928H6.497v-.936q-.002-.165.008-.329h4.078v-.927H6.618c.388-1.898 1.719-2.985 3.723-2.985.614 0 1.175.05 1.659.177V2.194A6.6 6.6 0 0 0 10.341 2c-2.928 0-4.82 1.569-5.244 4.3H4v.928h1.01v1.265H4v.928z"/>
+                <span class="ContenitoreIconaCardDashboard ContenitoreIconaColoreCeleste">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
+                        <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27m.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0z"/>
+                        <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5"/>
                     </svg>
                 </span>
-                <span class="ContenitoreDescrizioneIconaCardDashboard ContenitoreDescrizioneIconaReddito">
-                    Reddito
+                <img class="LogoCebat" src="/image001-4-2.png" alt="Cebat S.p.A.">
+                <span class="ContenitoreDescrizioneIconaCardDashboard ContenitoreDescrizioneColoreBlu">
+                    Recap
                 </span>
             </a>
             <div class="container SottoContenitoreCardDashboardSotto">
                 <div class="row">
                     <div class="col-6">
-                        <span>2.000 €</span>
-                        <p>Spese</p>
+                        <span>4</span>
+                        <p>Inconcluse</p>
                     </div>
                     <div class="col-6">
-                        <span>14.000 €</span>
-                        <p>Reddito</p>
+                        <span>2</span>
+                        <p>Concluse</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-12 col-md-5 col-xl-3">
+        <div class="p-3 SottoContenitoreCardDashboard ContenitoreColoreCelste">
+            <a class="SottoContenitoreCardDashboardSopra" href="#">
+                <span class="ContenitoreIconaCardDashboard ContenitoreIconaColoreCeleste">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                    </svg>
+                </span>
+                <img class="LogoCebat" src="/image001-4-2.png" alt="Cebat S.p.A.">
+                <span class="ContenitoreDescrizioneIconaCardDashboard ContenitoreDescrizioneColoreBlu">
+                    Commesse
+                </span>
+            </a>
+            <div class="container SottoContenitoreCardDashboardSotto">
+                <div class="row">
+                    <div class="col-6">
+                        <span>4</span>
+                        <p>Carenti</p>
+                    </div>
+                    <div class="col-6">
+                        <span>2</span>
+                        <p>Concluse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- <div class="col-12 col-md-5 col-xl-3">
         <div class="p-3 SottoContenitoreCardDashboard ContenitoreClienti">
             <a class="SottoContenitoreCardDashboardSopra" href="#">
                 <span class="ContenitoreIconaCardDashboard ContenitoreIconaClienti">
@@ -105,6 +135,6 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
-    </div>
+        </div> 
+    </div> --}}
 </div>
