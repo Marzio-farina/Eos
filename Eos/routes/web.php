@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\UserController;
 use App\Providers\FortifyServiceProvider;
@@ -10,3 +11,5 @@ Route::get('/impostazioni', [PageController::class,'impostazioni'])->middleware(
 
 Route::get('/utenti', [UserController::class,'index'])->middleware('auth')->name('Utenti.index');
 Route::get('/utente/{user}', [UserController::class,'show'])->middleware('auth')->name('Utente.show');
+
+Route::resource('orders', OrderController::class);

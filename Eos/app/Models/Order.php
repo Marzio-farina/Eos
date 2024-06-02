@@ -12,8 +12,8 @@ class Order extends Model
     protected $fillable = [
         'subAppaltatrice',
         'commessa',
-        'invioRichiesta',
         'ricevutaRichiesta',
+        'invioRichiesta',
         'sollecito1',
         'sollecito2',
         'sollecito3',
@@ -21,6 +21,5 @@ class Order extends Model
         'sollecito5',
         'stato',
         'dataInvioAlCSE',
-        'commessa',
     ];
 }

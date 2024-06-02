@@ -12,7 +12,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $commesseCebat = Order::all();
+        return view('Cebat.orders.index',compact('commesseCebat'));
     }
 
     /**
