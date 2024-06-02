@@ -2,5 +2,5 @@
 <x-layout>
     <x-navigazione/>
     <livewire:utenti.index/>
-    <livewire:utenti.create/>  
+    {{-- <livewire:utenti.create/>   --}}
 </x-layout>

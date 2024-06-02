@@ -1,4 +1,4 @@
-{{-- <x-layout>
+<x-layout>
     <div class="homeRegister">
         <div class="register">
             <form method="POST" action="/register">
@@ -37,4 +37,4 @@
             </form>
         </div>        
     </div>
-</x-layout> --}}
+</x-layout>

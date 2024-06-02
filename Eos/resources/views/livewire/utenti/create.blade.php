@@ -1,4 +1,4 @@
-<div class="container pt-4">
+{{-- <div class="container pt-4">
     <form class="d-flex flex-column align-items-center" wire:submit.prevent="store">
         @if (session()->has('success'))
             <div class="alert alert-success" role="alert">
@@ -34,4 +34,4 @@
         </div>
         <button type="submit" id="registrati">Registra utente</button>
     </form>
-</div>
+</div> --}}
