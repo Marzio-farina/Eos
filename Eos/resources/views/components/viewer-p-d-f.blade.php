@@ -1,3 +1,4 @@
+<p class="nomeFile">Nome del file : <span id="fileNameDisplay"></span></p>
 <input type="file" id="fileInput" webkitdirectory multiple>
 <div class="contenitorePadrePDF">
     <iframe id="pdfViewer"></iframe>

@@ -30,6 +30,7 @@ document.getElementById('nextBtn').addEventListener('click', function() {
 function displayPDF(file) {
     const fileURL = URL.createObjectURL(file);
     document.getElementById('pdfViewer').src = fileURL;
+    document.getElementById('fileNameDisplay').textContent = file.name;
 }
 
 

@@ -52,3 +52,9 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.nomeFile {
+    margin-top: 10px; 
+    font-weight: bold;
+    text-align: center;
+}
