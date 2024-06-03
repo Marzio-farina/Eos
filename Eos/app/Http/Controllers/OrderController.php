@@ -38,7 +38,7 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-        return view('Cebat.orders.show', compact('order'));
+        
     }
 
     /**
@@ -46,7 +46,7 @@ class OrderController extends Controller
      */
     public function edit(Order $order)
     {
-        //
+        return view('Cebat.orders.edit', compact('order'));
     }
 
     /**
