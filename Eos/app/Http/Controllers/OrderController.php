@@ -13,8 +13,6 @@ class OrderController extends Controller
      */
     public function index()
     {
-        
-
         $commesseCebat = Order::all();
         return view('Cebat.orders.index',compact('commesseCebat'));
     }
@@ -40,7 +38,7 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-        //
+        return view('Cebat.orders.show', compact('order'));
     }
 
     /**
