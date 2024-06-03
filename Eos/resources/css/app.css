@@ -12,5 +12,7 @@
 @import 'Dashboard/user/impostazioniUtente.css';
 @import 'Dashboard/user/modaleImpostazioniUtente.css';
 
+@import 'Dashboard/cebat/tabellaCommesseCebat.css';
+
 @import 'navbar';
 @import 'navigazione';

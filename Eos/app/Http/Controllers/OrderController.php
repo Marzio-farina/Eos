@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Order;
 use Illuminate\Http\Request;
+use Livewire\WithPagination;
 
 class OrderController extends Controller
 {
@@ -12,6 +13,8 @@ class OrderController extends Controller
      */
     public function index()
     {
+        
+
         $commesseCebat = Order::all();
         return view('Cebat.orders.index',compact('commesseCebat'));
     }

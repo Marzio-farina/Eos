@@ -1,0 +1,9 @@
+.tabellaCommesseCebatAzioni {
+    margin: 0 2px;
+    text-decoration: none;
+}
+
+.tabellaCommesseCebatAzioni:hover {
+    color: blue;
+    cursor: pointer;
+}
