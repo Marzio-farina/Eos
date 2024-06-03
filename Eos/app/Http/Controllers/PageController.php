@@ -19,5 +19,9 @@ class PageController extends Controller
     public function impostazioni () {
         return view('impostazioni');
     } 
+
+    public function vidimazione () {
+        return view('Cebat.vidimazione');
+    }
     
 }

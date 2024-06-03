@@ -13,3 +13,5 @@ Route::get('/utenti', [UserController::class,'index'])->middleware('auth')->name
 Route::get('/utente/{user}', [UserController::class,'show'])->middleware('auth')->name('Utente.show');
 
 Route::resource('orders', OrderController::class);
+
+Route::get('/Cebat/vidimazione', [PageController::class,'vidimazione'])->middleware('auth')->name('vidimazione');
