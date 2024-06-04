@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('operators', function (Blueprint $table) {
             $table->id();
             $table->string('nome',150);
-            $table->string('cognome',150);
-            $table->unsignedTinyInteger('Unilav_id');
+            $table->string('cognome',150)->nullable();
+            $table->unsignedTinyInteger('Unilav_id')->nullable();
             $table->foreign('Unilav_id')->references('id')->on('unilavs');
             $table->timestamps();
         });

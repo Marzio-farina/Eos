@@ -1,4 +1,5 @@
-<form>
+<form wire:submit.prevent="store">
+  <button type="submit">Salva ed aggiungi</button>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -69,12 +70,13 @@
               <div class="select-container" id="selectContainer">
                 <div class="formazioniLavoratori">
                   <select class="form-select form-select-sm" aria-label="Small select example" id="dynamicSelect">
-                      
+                    @foreach ($Operatori as $Operatore)
+                      <option wire:click="OpzioniOperatore({{$Operatore}})">
+                        {{$Operatore->nome}} {{$Operatore->cognome}}
+                      </option>
+                    @endforeach                  
                   </select>
-                  {{-- <button >
-                    +
-                  </button> --}}
-                  <input type="text" value="Lavoratore" id="textInput">
+                  <input type="text" value="Lavoratore" wire:model.change = "IdentificativoOperatore">               
                 </div>
                 <div id="contenitoreSelectItem"></div>
               </div>
