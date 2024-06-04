@@ -71,7 +71,7 @@
                 <div class="formazioniLavoratori">
                   <select class="form-select form-select-sm" aria-label="Small select example" id="dynamicSelect">
                     @foreach ($Operatori as $Operatore)
-                      <option wire:click="OpzioniOperatore({{$Operatore}})">
+                      <option {{-- wire:click="OpzioniOperatore({{$Operatore}})"--}}> 
                         {{$Operatore->nome}} {{$Operatore->cognome}}
                       </option>
                     @endforeach                  
