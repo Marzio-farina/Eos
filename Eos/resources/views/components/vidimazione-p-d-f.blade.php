@@ -65,17 +65,17 @@
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body vidimazioneLavoratori">
-          <div class="formazioniLavoratori">
-            <select class="form-select form-select-sm" aria-label="Small select example">
-                {{-- <option selected>Lavoratore</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option> --}}
-            </select>
-            <input type="text" value="Lavoratore">
-            <button>
-              +
-            </button>
+          <div class="select-container" id="selectContainer">
+            <div class="formazioniLavoratori">
+              <select class="form-select form-select-sm" aria-label="Small select example" id="dynamicSelect">
+                  
+              </select>
+              <button id="addButton">
+                +
+              </button>
+              <input type="text" value="Lavoratore" id="textInput">
+            </div>
+            <div id="contenitoreSelectItem"></div>
           </div>
           <div class="ContenitoreLavoratoreProva">
             <select class="form-select form-select-sm" aria-label="Small select example">

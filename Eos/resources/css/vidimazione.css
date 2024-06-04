@@ -105,3 +105,37 @@
     margin-left: 10px;
     width: 100px;
 }
+
+.select-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 2px 0;
+}
+
+.select-item button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#selectContainer {
+    margin-bottom: 20px;
+}
+
+#selectContainer .select-item {
+    width: 100px;
+}
+
+/* #contenitoreSelectItem {
+    display: flex;
+    justify-content: space-evenly;
+} */
