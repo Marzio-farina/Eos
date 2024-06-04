@@ -80,6 +80,38 @@
           <div class="ContenitoreLavoratoreProva">
             <select class="form-select form-select-sm" aria-label="Small select example">
               <option selected>Unilav</option>
+              <option selected>Idoneità sanitaria</option>
+              <option selected>Formazione Base</option>
+              <option selected>Art.36</option>
+              <option selected>RLS</option>
+              <option selected>RSPP</option>
+              <option selected>Preposto</option>
+              <option selected>Antincendio</option>
+              <option selected>Primo Soccorso</option>
+              <option selected>Escavatorista</option>
+              <option selected>Gruista</option>
+              <option selected>PES</option>
+              <option selected>PEI</option>
+              <option selected>DPI 3 Categoria</option>
+              <option selected>Ponteggiatore</option>
+              <option selected>GAS</option>
+              <option selected>ASIC</option>
+              <option selected>Segnaletica</option>
+              <option selected>Tesserino</option>
+              <option selected>DPI</option>
+              <option selected>Trattorista</option>
+              <option selected>PLE</option>
+              <option selected>Carrellista</option>
+              <option selected>PAV</option>
+              <option selected>Profilo C</option>
+              <option selected>Profilo D</option>
+              <option selected>Profilo E</option>
+              <option selected>Profilo F</option>
+              <option selected>Profilo G</option>
+              <option selected>Profilo X</option>
+              <option selected>Profilo Y</option>
+              <option selected>Profilo Z</option>
+              <option selected>Documento di riconoscimento</option>
             </select>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefaultUnilav1" checked>
