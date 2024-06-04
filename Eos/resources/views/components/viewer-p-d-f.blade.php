@@ -15,6 +15,6 @@
                 </svg>
             </button>
         </div>
-        <x-vidimazione-p-d-f/>  
+        <livewire:cebat.vidimazione/>  
     </div>     
 </div>
