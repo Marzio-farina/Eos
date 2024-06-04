@@ -1,4 +1,4 @@
-<div>
+<form>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -318,4 +318,4 @@
             </div>
         </div>
     </div>
-</div>
+</form>

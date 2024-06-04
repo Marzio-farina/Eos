@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nome',150);
             $table->string('cognome',150);
             $table->unsignedTinyInteger('Unilav_id');
-            $table->foreign('Unilav_id')->references('id')->on('unilav');
+            $table->foreign('Unilav_id')->references('id')->on('unilavs');
             $table->timestamps();
         });
     }
