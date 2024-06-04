@@ -18,4 +18,3 @@
         <x-vidimazione-p-d-f/>  
     </div>     
 </div>
-<script src="script.js"></script>

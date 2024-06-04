@@ -58,3 +58,25 @@
     font-weight: bold;
     text-align: center;
 }
+
+.formazioniLavoratori {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35px;
+}
+
+.formazioniLavoratori input {
+    width: 200px;
+    font-size: 16px;
+}
+
+.formazioniLavoratori select {
+    width: 220px;
+    font-size: 16px;
+}
+
+.formazioniLavoratori button {
+    height: 30px;
+    width: 30px;
+}
