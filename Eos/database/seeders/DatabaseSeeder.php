@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Operator;
 use App\Models\Order;
 use App\Models\Unilav;
 use App\Models\User;
@@ -23,6 +24,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Order::factory(50)->create();
-        Unilav::factory(50)->create();
+        Unilav::factory(100)->create();
+        Operator::factory(10)->create();
     }
 }

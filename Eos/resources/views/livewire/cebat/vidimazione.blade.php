@@ -71,9 +71,9 @@
                   <select class="form-select form-select-sm" aria-label="Small select example" id="dynamicSelect">
                       
                   </select>
-                  <button id="addButton">
+                  {{-- <button >
                     +
-                  </button>
+                  </button> --}}
                   <input type="text" value="Lavoratore" id="textInput">
                 </div>
                 <div id="contenitoreSelectItem"></div>
