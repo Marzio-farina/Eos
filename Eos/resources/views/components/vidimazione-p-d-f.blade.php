@@ -64,7 +64,7 @@
         </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
+        <div class="accordion-body vidimazioneLavoratori">
           <div class="formazioniLavoratori">
             <select class="form-select form-select-sm" aria-label="Small select example">
                 {{-- <option selected>Lavoratore</option>
@@ -76,6 +76,30 @@
             <button>
               +
             </button>
+          </div>
+          <div class="ContenitoreLavoratoreProva">
+            <select class="form-select form-select-sm" aria-label="Small select example">
+              <option selected>Unilav</option>
+            </select>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefaultUnilav1" checked>
+              <label class="form-check-label" for="flexRadioDefaultUnilav1">
+                Assente
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefaultUnilav2">
+              <label class="form-check-label" for="flexRadioDefaultUnilav2">
+                Scaduto
+              </label>
+              <input type="text" value="data" class="ScadenzaVidimazione">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefaultUnilav3">
+              <label class="form-check-label" for="flexRadioDefaultUnilav3">
+                Valido
+              </label>
+            </div>
           </div>
         </div>
       </div>
