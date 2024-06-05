@@ -15,6 +15,9 @@
                 </svg>
             </button>
         </div>
-        <x-Cebat.vidimazione :operatori="$operatori"/>
+        <x-Cebat.vidimazione 
+            :operatori="$operatori"
+            :unilavs="$unilavs"
+        />
     </div>     
 </div>

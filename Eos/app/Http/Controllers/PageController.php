@@ -23,9 +23,9 @@ class PageController extends Controller
     } 
 
     public function vidimazione () {
-        $Operatori= Operator::all();
-        $Unilavs = Unilav::all();
-        return view('Cebat.vidimazione', compact('Unilavs','Operatori'));
+        $operatori= Operator::all();
+        $unilavs = Unilav::all();
+        return view('Cebat.vidimazione', compact('unilavs','operatori'));
     }
     
 }
