@@ -15,6 +15,6 @@
                 </svg>
             </button>
         </div>
-        <livewire:cebat.vidimazione/>  
+        {{-- <livewire:cebat.vidimazione/>   --}}
     </div>     
 </div>
