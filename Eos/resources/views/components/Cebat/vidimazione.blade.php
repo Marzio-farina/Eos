@@ -70,9 +70,9 @@
                 <div class="select-container" id="selectContainer">
                   <div class="formazioniLavoratori">
                     <select class="form-select form-select-sm" aria-label="Small select example" id="dynamicSelect">
-                      @foreach ($Operatori as $Operatore)
+                      @foreach ($operatori as $operatore)
                         <option {{-- wire:click="OpzioniOperatore({{$Operatore}})"--}}> 
-                          {{$Operatore->nome}} {{$Operatore->cognome}}
+                          {{$operatore->nome}} {{$operatore->cognome}}
                         </option>
                       @endforeach                  
                     </select>

@@ -15,6 +15,6 @@
                 </svg>
             </button>
         </div>
-        {{-- <livewire:cebat.vidimazione/>   --}}
+        <x-Cebat.vidimazione :operatori="$operatori"/>
     </div>     
 </div>
