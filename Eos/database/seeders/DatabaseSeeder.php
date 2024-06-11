@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\mansionelavorator;
 use App\Models\Operator;
 use App\Models\Order;
 use App\Models\Unilav;
@@ -18,13 +19,15 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(40)->create();
 
-        // User::factory(10)->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        User::factory(1)->create([
+            'name' => 'Marzio',
+            'email' => 'marzio@live.it',
+            'password' => 'password',
+        ]);
 
         Order::factory(50)->create();
         Unilav::factory(100)->create();
+        mansionelavorator::factory((50))->create();
         Operator::factory(10)->create();
     }
 }
