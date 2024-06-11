@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->string('nome',100);
-            $table->unsignedTinyInteger('campiCommittenza_id');
-            $table->unsignedTinyInteger('campiFile_id');
+            $table->unsignedTinyInteger('campiCommittenza_id')->nullable();
+            $table->unsignedTinyInteger('campiFile_id')->nullable();
             $table->timestamps();
         });
     }
