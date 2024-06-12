@@ -32,8 +32,8 @@ class DatabaseSeeder extends Seeder
         // Operator::factory(10)->create();
 
         $this->call([
-            ClientSeeder::class,
-            CampiClientSeeder::class,
+            // ClientSeeder::class,
+            // CampiClientSeeder::class,
         ]);
     }
 }
