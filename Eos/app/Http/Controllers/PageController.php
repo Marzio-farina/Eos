@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Client;
 use App\Models\User;
 use App\Models\Order;
 
@@ -24,8 +23,7 @@ class PageController extends Controller
     } 
 
     public function vidimazione () {
-        $committenze = Client::all();
-        return view('Cebat.vidimazione',compact('committenze'));
+        return view('Cebat.vidimazione');
     }
     
 }
