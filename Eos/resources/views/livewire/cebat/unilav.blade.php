@@ -1,11 +1,6 @@
 <div class="opzioneVidimazione">
     <select>
         <option value="" selected disabled></option>
-        <option value="Committenza 1">Committenza 1</option>
-        <option value="Committenza 2">Committenza 2</option>
-    </select>
-    <select>
-        <option value="" selected disabled></option>
         <option value="01_Allegato_8">01_Allegato_8</option>
         <option value="02_Allegato_9">02_Allegato_9</option>
         <option value="03_Attestati_di_formazione">03_Attestati_di_formazione</option>

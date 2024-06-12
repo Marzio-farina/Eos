@@ -15,6 +15,6 @@
                 </svg>
             </button>
         </div>
-        <x-Cebat.vidimazione/>
+        <x-Cebat.vidimazione :committenze="$committenze"/>
     </div>     
 </div>

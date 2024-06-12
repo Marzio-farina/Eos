@@ -7,3 +7,16 @@
 .opzioneVidimazione select {
     height: 40px;
 }
+
+.buttonCommittenza {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.buttonCommittenza button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
