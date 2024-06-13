@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('campi_clients', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedTinyInteger('id')->autoIncrement()->primary();
+            $table->string('nomeCommittente',150);
             $table->boolean('01_Allegato_8')->default(false);
             $table->boolean('02_Allegato_9')->default(false);
             $table->boolean('03_Attestati_di_formazione')->default(false);

@@ -14,6 +14,7 @@ class CampiClientSeeder extends Seeder
     public function run(): void
     {
         $campiClient = [
+            'nomeCommittente' => 'Terna',
             '01_Allegato_8' => false,
             '02_Allegato_9' => false,
             '03_Attestati_di_formazione' => false,

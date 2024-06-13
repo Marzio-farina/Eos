@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome',100);
             $table->unsignedTinyInteger('campiCommittenza_id')->nullable();
+            $table->foreign('campiCommittenza_id')->references('id')->on('campi_clients');
             $table->unsignedTinyInteger('campiFile_id')->nullable();
             $table->timestamps();
         });
@@ -25,6 +26,10 @@ return new class extends Migration
      */
     public function down(): void
     {
+        // Schema::table('clients', function (Blueprint $table) {
+        //     $table->dropForeign(['campiCommittenza_id']);
+        // });
+
         Schema::dropIfExists('clients');
     }
 };
