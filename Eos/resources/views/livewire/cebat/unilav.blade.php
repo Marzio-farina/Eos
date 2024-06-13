@@ -1,28 +1,6 @@
 <div class="opzioneVidimazione">
     <select>
         <option value="" selected disabled></option>
-        <option value="01_Allegato_8">01_Allegato_8</option>
-        <option value="02_Allegato_9">02_Allegato_9</option>
-        <option value="03_Attestati_di_formazione">03_Attestati_di_formazione</option>
-        <option value="04_Allegato_10">04_Allegato_10</option>
-        <option value="05_Mezzi_Macchinari">05_Mezzi_Macchinari</option>
-        <option value="06_Attrezzature">06_Attrezzature</option>
-        <option value="07_Nomine_Figure_Responsabilità">07_Nomine_Figure_Responsabilità</option>
-        <option value="08_POS_Allegati">08_POS_Allegati</option>
-        <option value="09_DVR">09_DVR</option>
-        <option value="10_Visura_CCIAA">10_Visura_CCIAA</option>
-        <option value="11_Dichiarazione_CCNL">11_Dichiarazione_CCNL</option>
-        <option value="12_Iscrizione_Gestori_Ambientali">12_Iscrizione_Gestori_Ambientali</option>
-        <option value="13_Dichiarazione_Cave_Discariche">13_Dichiarazione_Cave_Discariche</option>
-        <option value="14_SOA">14_SOA</option>
-        <option value="15_White_List">15_White_List</option>
-        <option value="16_Dichiarazione_art_14">16_Dichiarazione_art_14</option>
-        <option value="17_Procedura_Luoghi_Confinati">17_Procedura_Luoghi_Confinati</option>
-        <option value="18_Piano_Amianto">18_Piano_Amianto</option>
-    </select>
-
-    <select>
-        <option value="" selected disabled></option>
         <option value="unilav_id">unilav_id</option>
         <option value="mansione_lavorators_id">mansione_lavorators_id</option>
         <option value="idoneitàSanitaria">idoneitàSanitaria</option>
