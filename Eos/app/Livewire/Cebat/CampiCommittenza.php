@@ -11,6 +11,7 @@ class CampiCommittenza extends Component
 {
     public $campiCommittenza;
     public $filteredCampiCommittenza = [];
+    public $selectedKey;
 
     public function render()
     {
@@ -36,5 +37,10 @@ class CampiCommittenza extends Component
         } else {
             $this->filteredCampiCommittenza = [];
         }
+    }
+
+    public function filterDettaglio()
+    {
+        $this->dispatch('filterDettaglio', $this->selectedKey);
     }
 }
