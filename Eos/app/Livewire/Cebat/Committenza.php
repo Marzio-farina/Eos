@@ -26,5 +26,7 @@ class Committenza extends Component
     public function changeColor($index)
     {
         $this->selectedButton = $index;
+        $campiCommittenzaId = $this->committenze[$index]->campiCommittenza_id;
+        $this->dispatch('filterCommittenza', $campiCommittenzaId);
     }
 }

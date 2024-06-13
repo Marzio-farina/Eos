@@ -3,13 +3,14 @@
 namespace App\Livewire\Cebat;
 
 use App\Models\campiClient;
+use App\Models\Client;
 use Livewire\Component;
 use Livewire\Attributes\On;
 
 class CampiCommittenza extends Component
 {
     public $campiCommittenza;
-    public $filteredCampiCommittenza= [];
+    public $filteredCampiCommittenza = [];
 
     public function render()
     {
@@ -20,15 +21,20 @@ class CampiCommittenza extends Component
 
     public function mount()
     {
-        $this->campiCommittenza = campiClient::all();
+        $this->campiCommittenza = CampiClient::all();
     }
     
-    #[On('index')]
-    public function filterCommittenza($index)
+    #[On('filterCommittenza')]
+    public function filterCommittenza($campiCommittenzaId)
     {
-        $client = $this->campiCommittenza[$index];
-        $this->filteredCampiCommittenza = collect($client->getAttributes())->filter(function($value, $key) {
-            return $value == 1 && $key !== 'id';
-        });
+        $client = $this->campiCommittenza->where('id', $campiCommittenzaId)->first();
+
+        if ($client) {
+            $this->filteredCampiCommittenza = collect($client->getAttributes())->filter(function($value, $key) {
+                return $value == 1 && $key !== 'id';
+            });
+        } else {
+            $this->filteredCampiCommittenza = [];
+        }
     }
 }

@@ -29,4 +29,9 @@ class campiClient extends Model
         '17_Procedura_Luoghi_Confinati',
         '18_Piano_Amianto',
     ];
+
+    public function clients()
+    {
+        return $this->hasMany(Client::class, 'campiCommittenza_id');
+    }
 }
