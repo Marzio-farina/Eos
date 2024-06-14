@@ -1,6 +1,6 @@
 <div class="row opzioneVidimazione">
     <div class="col-7">
-        @if($showForm)
+        @if($showFormAdd)
             <form wire:submit="store">
                 <div class="inputNuovoOperatore">
                     <label for="name">Nome:</label>

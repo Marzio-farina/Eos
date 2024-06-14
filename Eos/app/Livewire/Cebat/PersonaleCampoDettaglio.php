@@ -8,7 +8,7 @@ use Livewire\Attributes\On;
 
 class PersonaleCampoDettaglio extends Component
 {
-    public $showForm;
+    public $showFormAdd;
     public $nome;
     public $cognome;
     public $selectedKey;
@@ -16,14 +16,14 @@ class PersonaleCampoDettaglio extends Component
     public function render()
     {
         return view('livewire.cebat.personale-campo-dettaglio', 
-        ['showForm' => $this->showForm]
+        ['showFormAdd' => $this->showFormAdd]
         );
     }
     
     #[On('AddForm')]
     public function handleAddForm($params)
     {
-        $this->showForm = $params['showForm'];
+        $this->showFormAdd = $params['showFormAdd'];
         $this->selectedKey = $params['selectedKey'];
     }
 
