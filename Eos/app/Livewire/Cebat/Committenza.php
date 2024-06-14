@@ -4,6 +4,7 @@ namespace App\Livewire\Cebat;
 
 use App\Models\Client;
 use Livewire\Component;
+use Livewire\Attributes\On;
 
 class Committenza extends Component
 {

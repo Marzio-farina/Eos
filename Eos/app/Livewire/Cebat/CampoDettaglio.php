@@ -11,6 +11,7 @@ class CampoDettaglio extends Component
     public $campiDettaglio;
     public $filteredDettaglio = [];
     public $showForm = false;
+    public $selectedKey;
 
     public function render()
     {
@@ -22,6 +23,7 @@ class CampoDettaglio extends Component
     #[On('filterDettaglio')]
     public function filterDettaglio($selectedKey)
     {
+        $this->selectedKey = $selectedKey;
         switch ($selectedKey) {
             case "03_Attestati_di_formazione":
                 $this->filteredDettaglio = Operator::all();
@@ -36,7 +38,7 @@ class CampoDettaglio extends Component
     public function toggleForm()
     {
         $this->showForm = !$this->showForm;
-        $this->dispatch('AddForm', $this->showForm);
+        $this->dispatch('AddForm', ['showForm' => $this->showForm, 'selectedKey' => $this->selectedKey]);
     }
 }
 
