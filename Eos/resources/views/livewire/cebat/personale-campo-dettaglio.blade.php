@@ -1,14 +1,16 @@
-<div>
-    @if($showForm)
-        <form>
-            <div>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-        </form>
-    @endif
+<div class="row opzioneVidimazione">
+    <div class="col-7">
+        @if($showForm)
+            <form>
+                <div class="inputNuovoOperatore">
+                    <label for="name">Nome:</label>
+                    <input type="text">
+                </div>
+                <div class="inputNuovoOperatore">
+                    <label for="name">Cognome:</label>
+                    <input type="text">
+                </div>
+            </form>
+        @endif
+    </div>
 </div>
