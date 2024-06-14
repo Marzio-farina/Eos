@@ -10,6 +10,7 @@ class CampoDettaglio extends Component
 {
     public $campiDettaglio;
     public $filteredDettaglio = [];
+    public $showForm = false;
 
     public function render()
     {
@@ -18,19 +19,24 @@ class CampoDettaglio extends Component
         ]);
     }
 
-    // public function mount()
-    // {
-    //     $this->campiDettaglio = Operator::all();
-    // }
-
     #[On('filterDettaglio')]
     public function filterDettaglio($selectedKey)
     {
-        if ($selectedKey == "03_Attestati_di_formazione") {
-            $this->filteredDettaglio = Operator::all();
-        }else {
-            # code...
+        switch ($selectedKey) {
+            case "03_Attestati_di_formazione":
+                $this->filteredDettaglio = Operator::all();
+                break;
+        
+            default:
+                $this->filteredDettaglio = [];
+                break;
         }
+    }
+
+    public function toggleForm()
+    {
+        $this->showForm = !$this->showForm;
+        $this->dispatch('AddForm', $this->showForm);
     }
 }
 
