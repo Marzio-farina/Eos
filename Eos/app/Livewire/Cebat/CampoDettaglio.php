@@ -11,6 +11,7 @@ class CampoDettaglio extends Component
     public $campiDettaglio;
     public $filteredDettaglio = [];
     public $showFormAdd = false;
+    public $showFormEdit = false;
     public $selectedKey;
 
     public function render()
@@ -36,10 +37,14 @@ class CampoDettaglio extends Component
     }
 
     #[On('nascondiAddOperatore')]
-    public function toggleFormAdd()
-    {
+    public function toggleFormAdd(){
         $this->showFormAdd = !$this->showFormAdd;
         $this->dispatch('AddForm', ['showFormAdd' => $this->showFormAdd, 'selectedKey' => $this->selectedKey]);
+    }
+
+    public function toggleFormEdit(){
+        $this->showFormEdit = !$this->showFormEdit;
+        $this->dispatch('EditForm', ['showFormEdit' => $this->showFormEdit]);
     }
 }
 

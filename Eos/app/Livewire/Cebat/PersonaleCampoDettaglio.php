@@ -38,4 +38,9 @@ class PersonaleCampoDettaglio extends Component
         $this->dispatch('filterDettaglio',$this->selectedKey);
         $this->dispatch('nascondiAddOperatore');
     }
+
+    #[On('EditForm')]
+    public function Edit(){
+
+    }
 }
