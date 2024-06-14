@@ -36,7 +36,7 @@ class CampoDettaglio extends Component
     }
 
     #[On('nascondiAddOperatore')]
-    public function toggleForm()
+    public function toggleFormAdd()
     {
         $this->showForm = !$this->showForm;
         $this->dispatch('AddForm', ['showForm' => $this->showForm, 'selectedKey' => $this->selectedKey]);
