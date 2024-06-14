@@ -35,6 +35,7 @@ class CampoDettaglio extends Component
         }
     }
 
+    #[On('nascondiAddOperatore')]
     public function toggleForm()
     {
         $this->showForm = !$this->showForm;

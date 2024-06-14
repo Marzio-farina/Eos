@@ -36,5 +36,6 @@ class PersonaleCampoDettaglio extends Component
         $this->cognome = "";
         
         $this->dispatch('filterDettaglio',$this->selectedKey);
+        $this->dispatch('nascondiAddOperatore');
     }
 }
