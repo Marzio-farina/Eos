@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('descrizione')->nullable();
             $table->string('CIG',30)->nullable();
             $table->unsignedTinyInteger('subAppaltatrice_id')->nullable();
-            // $table->foreign('subAppaltatrice_id')->references('id')->on('subAppaltatrice');
+            $table->foreign('subAppaltatrice_id')->references('id')->on('sub_contractors');
             $table->unsignedBigInteger('committenza_id')->nullable();
             $table->foreign('committenza_id')->references('id')->on('clients');
             $table->date('invioRichiesta')->nullable();

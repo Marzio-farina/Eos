@@ -13,6 +13,7 @@ use Illuminate\Database\Seeder;
 use App\Models\mansionelavorator;
 use App\Models\reminder;
 use App\Models\StatusOrder;
+use App\Models\SubContractor;
 
 class DatabaseSeeder extends Seeder
 {
@@ -37,6 +38,7 @@ class DatabaseSeeder extends Seeder
         CebatContact::factory(3)->create();
         StatusOrder::factory(3)->create();
         reminder::factory(3)->create();
+        SubContractor::factory(10)->create();
         Order::factory(50)->create();
         Unilav::factory(100)->create();
         mansionelavorator::factory((50))->create();
