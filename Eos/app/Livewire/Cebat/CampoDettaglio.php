@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\car;
 use App\Models\Operator;
 use App\Models\po;
+use App\Models\scaffolding;
 use App\Models\SubContractor;
 use Livewire\Attributes\On;
 
@@ -31,10 +32,10 @@ class CampoDettaglio extends Component
         $this->selectedKey = $selectedKey;
         switch ($selectedKey) {
             case "03_Attestati_di_formazione":
-                $this->filteredDettaglio = Operator::all();
+                $this->filteredDettaglio = Operator::select('id', 'nome', 'cognome')->get();
                 break;
             case "Personale":
-                $this->filteredDettaglio = Operator::all();
+                $this->filteredDettaglio = Operator::select('id', 'nome', 'cognome')->get();
                 break;
             case "Generale":
                 $this->filteredDettaglio = SubContractor::all();
@@ -43,10 +44,13 @@ class CampoDettaglio extends Component
                 $this->filteredDettaglio = po::all();
                 break;
             case "Distacchi":
-                $this->filteredDettaglio = Operator::all();
+                $this->filteredDettaglio = Operator::select('id', 'nome', 'cognome')->get();
                 break;
             case "Mezzi":
                 $this->filteredDettaglio = car::all();
+                break;
+            case "Ponteggi":
+                $this->filteredDettaglio = scaffolding::all();
                 break;
             default:
                 $this->filteredDettaglio = [];
