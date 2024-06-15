@@ -78,8 +78,8 @@ class PersonaleCampoDettaglio extends Component
                 'cognome' => $this->cognome,
             ]);
             $this->resetForm();
-            $this->dispatch('filterDettaglio', $this->selectedKey);
             $this->dispatch('EditForm', ['showFormEdit' => false]);
+            $this->dispatch('filterDettaglio', $this->selectedKey);
         }
     }
 

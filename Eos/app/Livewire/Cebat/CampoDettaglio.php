@@ -55,6 +55,14 @@ class CampoDettaglio extends Component
             'operatorId' => $this->selectedOperatorId
         ]);
     }
+
+    public function delete($operatorId){
+        $operatore = Operator::find($operatorId);
+        if ($operatore) {
+            $operatore->delete();
+            $this->dispatch('filterDettaglio', $this->selectedKey);
+        }        
+    }
 }
 
 
