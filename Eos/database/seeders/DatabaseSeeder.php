@@ -11,6 +11,8 @@ use App\Models\Operator;
 use Illuminate\Database\Seeder;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\mansionelavorator;
+use App\Models\reminder;
+use App\Models\StatusOrder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -27,15 +29,17 @@ class DatabaseSeeder extends Seeder
             'password' => 'password',
         ]);
 
-        CebatContact::factory(3)->create();
-        Order::factory(50)->create();
-        Unilav::factory(100)->create();
-        mansionelavorator::factory((50))->create();
-        Operator::factory(10)->create();
-
         $this->call([
             ClientSeeder::class,
             CampiClientSeeder::class,
         ]);
+
+        CebatContact::factory(3)->create();
+        StatusOrder::factory(3)->create();
+        reminder::factory(3)->create();
+        Order::factory(50)->create();
+        Unilav::factory(100)->create();
+        mansionelavorator::factory((50))->create();
+        Operator::factory(10)->create();
     }
 }
