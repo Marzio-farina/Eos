@@ -13,6 +13,7 @@ class CampoDettaglio extends Component
     public $showFormAdd = false;
     public $showFormEdit = false;
     public $selectedKey;
+    public $selectedOperatorId;
 
     public function render()
     {
@@ -39,12 +40,20 @@ class CampoDettaglio extends Component
     #[On('nascondiAddOperatore')]
     public function toggleFormAdd(){
         $this->showFormAdd = !$this->showFormAdd;
-        $this->dispatch('AddForm', ['showFormAdd' => $this->showFormAdd, 'selectedKey' => $this->selectedKey]);
+        $this->dispatch('AddForm', [
+            'showFormAdd' => $this->showFormAdd, 
+            'selectedKey' => $this->selectedKey
+        ]);
     }
 
-    public function toggleFormEdit(){
+    public function toggleFormEdit($operatorId)
+    {
         $this->showFormEdit = !$this->showFormEdit;
-        $this->dispatch('EditForm', ['showFormEdit' => $this->showFormEdit]);
+        $this->selectedOperatorId = $operatorId;
+        $this->dispatch('EditForm', [
+            'showFormEdit' => $this->showFormEdit, 
+            'operatorId' => $this->selectedOperatorId
+        ]);
     }
 }
 

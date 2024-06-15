@@ -1,5 +1,5 @@
 <div class="opzioneVidimazione">
-    <select>
+    {{-- <select>
         <option value="" selected disabled></option>
         <option value="unilav_id">unilav_id</option>
         <option value="mansione_lavorators_id">mansione_lavorators_id</option>
@@ -45,7 +45,7 @@
         <option value="formazioneProfiloY">formazioneProfiloY</option>
         <option value="formazioneProfiloZ">formazioneProfiloZ</option>
         <option value="documentoDiRiconoscimento">documentoDiRiconoscimento</option>
-    </select>
+    </select> --}}
     
 </div>
 
