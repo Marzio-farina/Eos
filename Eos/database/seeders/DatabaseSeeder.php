@@ -11,6 +11,7 @@ use App\Models\Operator;
 use Illuminate\Database\Seeder;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\mansionelavorator;
+use App\Models\po;
 use App\Models\reminder;
 use App\Models\StatusOrder;
 use App\Models\SubContractor;
@@ -39,6 +40,7 @@ class DatabaseSeeder extends Seeder
         StatusOrder::factory(3)->create();
         reminder::factory(3)->create();
         SubContractor::factory(10)->create();
+        po::factory(100)->create();
         Order::factory(50)->create();
         Unilav::factory(100)->create();
         mansionelavorator::factory((50))->create();
