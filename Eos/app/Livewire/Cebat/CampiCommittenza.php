@@ -3,7 +3,6 @@
 namespace App\Livewire\Cebat;
 
 use App\Models\campiClient;
-use App\Models\Client;
 use Livewire\Component;
 use Livewire\Attributes\On;
 
@@ -29,7 +28,7 @@ class CampiCommittenza extends Component
     public function filterCommittenza($campiCommittenzaId)
     {
         $client = $this->campiCommittenza->where('id', $campiCommittenzaId)->first();
-
+        // dd($client);
         if ($client) {
             $this->filteredCampiCommittenza = collect($client->getAttributes())->filter(function($value, $key) {
                 return $value == 1 && $key !== 'id';

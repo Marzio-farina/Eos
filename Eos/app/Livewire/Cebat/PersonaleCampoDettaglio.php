@@ -27,6 +27,7 @@ class PersonaleCampoDettaglio extends Component
     #[On('AddForm')]
     public function handleAddForm($params)
     {
+        $this->resetForm();
         $this->showFormAdd = $params['showFormAdd'];
         $this->selectedKey = $params['selectedKey'];
     }

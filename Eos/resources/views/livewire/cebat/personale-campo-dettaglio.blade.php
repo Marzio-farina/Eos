@@ -16,7 +16,6 @@
                     </button>
                 </div>
             </form>
-            <p>prova</p>
         @elseif($showFormEdit)
             <form wire:submit.prevent="update">
                 <div class="inputNuovoOperatore">
