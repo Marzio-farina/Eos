@@ -32,6 +32,12 @@ return new class extends Migration
             $table->boolean('16_Dichiarazione_art_14')->default(false);
             $table->boolean('17_Procedura_Luoghi_Confinati')->default(false);
             $table->boolean('18_Piano_Amianto')->default(false);
+            $table->boolean('Generale')->default(false);
+            $table->boolean('POS')->default(false);
+            $table->boolean('Personale')->default(false);
+            $table->boolean('Distacchi')->default(false);
+            $table->boolean('Mezzi')->default(false);
+            $table->boolean('Ponteggi')->default(false);
             $table->timestamps();
         });
     }

@@ -22,7 +22,7 @@ class OrderFactory extends Factory
             'descrizione'=>Str::limit(fake()->sentence, 150),
             'CIG' => Str::limit(fake()->text(30), 30),
             'subAppaltatrice_id'=>fake()->numberBetween(1, 10),
-            'committenza_id'=>fake()->numberBetween(1, 3),
+            'committenza_id'=>fake()->numberBetween(1, 2),
             'invioRichiesta'=>fake()->date('Y_m_d'),
             'ricevutaRichiesta'=>fake()->date('Y_m_d'),
             'sollecito_id'=>fake()->numberBetween(1, 3),

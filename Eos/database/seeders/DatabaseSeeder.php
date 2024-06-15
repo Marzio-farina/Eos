@@ -33,8 +33,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
-            ClientSeeder::class,
             CampiClientSeeder::class,
+            ClientSeeder::class,
         ]);
 
         CebatContact::factory(3)->create();

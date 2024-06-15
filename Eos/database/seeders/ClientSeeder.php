@@ -16,15 +16,11 @@ class ClientSeeder extends Seeder
         $clients = [
             [
                 'nome' => 'Terna',
-            ],
-            [
-                'nome' => 'Areti',
-            ],
-            [
-                'nome' => 'E-Distribuzione',
+                'campiCommittenza_id'=>'1',
             ],
             [
                 'nome' => 'Hera',
+                'campiCommittenza_id'=>'2',
             ],
         ];
 
