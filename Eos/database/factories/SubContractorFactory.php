@@ -26,6 +26,7 @@ class SubContractorFactory extends Factory
             'nominaMedicoCompetente'=>fake()->numberBetween(0, 1),
             'POS_id'=>fake()->numberBetween(1, 10),
             'nominaRLST'=>fake()->numberBetween(0, 1),
+            'ponteggi_id'=>fake()->numberBetween(1, 10),
         ];
     }
 }

@@ -3,7 +3,9 @@
 namespace App\Livewire\Cebat;
 
 use Livewire\Component;
+use App\Models\car;
 use App\Models\Operator;
+use App\Models\po;
 use App\Models\SubContractor;
 use Livewire\Attributes\On;
 
@@ -36,6 +38,15 @@ class CampoDettaglio extends Component
                 break;
             case "Generale":
                 $this->filteredDettaglio = SubContractor::all();
+                break;
+            case "POS":
+                $this->filteredDettaglio = po::all();
+                break;
+            case "Distacchi":
+                $this->filteredDettaglio = Operator::all();
+                break;
+            case "Mezzi":
+                $this->filteredDettaglio = car::all();
                 break;
             default:
                 $this->filteredDettaglio = [];

@@ -26,10 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        // Schema::table('clients', function (Blueprint $table) {
-        //     $table->dropForeign(['campiCommittenza_id']);
-        // });
-
         Schema::dropIfExists('clients');
     }
 };

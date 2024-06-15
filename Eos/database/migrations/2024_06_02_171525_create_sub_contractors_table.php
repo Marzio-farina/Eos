@@ -21,6 +21,7 @@ return new class extends Migration
             $table->boolean('nominaMedicoCompetente')->default(false);
             $table->unsignedTinyInteger('POS_id')->nullable();
             $table->boolean('nominaRLST')->default(false);
+            $table->unsignedTinyInteger('ponteggi_id')->nullable();
             $table->timestamps();
         });
     }
