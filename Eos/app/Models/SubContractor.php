@@ -12,6 +12,7 @@ class SubContractor extends Model
     protected $fillable = [
         'nome',
         'DVR',
+        'DURC',
         'CCIA',
         'VCCIA',
         'nominaMedicoCompetente',

@@ -20,6 +20,7 @@ class SubContractorFactory extends Factory
         return [
             'nome'=>Str::limit(fake()->text(150), 150),
             'DVR'=>fake()->numberBetween(0, 1),
+            'DURC'=>fake()->numberBetween(0, 1),
             'CCIA'=>fake()->numberBetween(0, 1),
             'VCCIA'=>fake()->numberBetween(0, 1),
             'nominaMedicoCompetente'=>fake()->numberBetween(0, 1),

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->unsignedTinyInteger('id')->autoIncrement()->primary();
             $table->string('nome',150)->nullable();
             $table->boolean('DVR')->default(false);
+            $table->boolean('DURC')->default(false);
             $table->boolean('CCIA')->default(false);
             $table->boolean('VCCIA')->default(false);
             $table->boolean('nominaMedicoCompetente')->default(false);

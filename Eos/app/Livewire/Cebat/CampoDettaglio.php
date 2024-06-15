@@ -4,6 +4,7 @@ namespace App\Livewire\Cebat;
 
 use Livewire\Component;
 use App\Models\Operator;
+use App\Models\SubContractor;
 use Livewire\Attributes\On;
 
 class CampoDettaglio extends Component
@@ -30,7 +31,12 @@ class CampoDettaglio extends Component
             case "03_Attestati_di_formazione":
                 $this->filteredDettaglio = Operator::all();
                 break;
-        
+            case "Personale":
+                $this->filteredDettaglio = Operator::all();
+                break;
+            case "Generale":
+                $this->filteredDettaglio = SubContractor::all();
+                break;
             default:
                 $this->filteredDettaglio = [];
                 break;
