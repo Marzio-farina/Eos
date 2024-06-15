@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\car;
 use App\Models\CebatContact;
 use App\Models\User;
 use App\Models\Order;
@@ -45,5 +46,6 @@ class DatabaseSeeder extends Seeder
         Unilav::factory(100)->create();
         mansionelavorator::factory((50))->create();
         Operator::factory(10)->create();
+        car::factory(100)->create();
     }
 }
