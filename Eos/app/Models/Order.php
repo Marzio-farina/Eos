@@ -10,16 +10,17 @@ class Order extends Model
     use HasFactory;
 
     protected $fillable = [
-        'subAppaltatrice',
-        'commessa',
-        'ricevutaRichiesta',
+        'nome',
+        'descrizione',
+        'CIG',
+        'subaAppaltatrice_id',
+        'committenza_id',
         'invioRichiesta',
-        'sollecito1',
-        'sollecito2',
-        'sollecito3',
-        'sollecito4',
-        'sollecito5',
-        'stato',
+        'ricevutaRichiesta',
+        'sollecito_id',
+        'statoCommessa_id',
         'dataInvioAlCSE',
+        'referentiCebat_id',
+        'user_id',
     ];
 }

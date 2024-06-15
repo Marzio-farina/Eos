@@ -2,14 +2,15 @@
 
 namespace Database\Seeders;
 
-use App\Models\Client;
-use App\Models\mansionelavorator;
-use App\Models\Operator;
-use App\Models\Order;
-use App\Models\Unilav;
+use App\Models\CebatContact;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Order;
+use App\Models\Client;
+use App\Models\Unilav;
+use App\Models\Operator;
 use Illuminate\Database\Seeder;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\mansionelavorator;
 
 class DatabaseSeeder extends Seeder
 {
@@ -26,6 +27,7 @@ class DatabaseSeeder extends Seeder
             'password' => 'password',
         ]);
 
+        CebatContact::factory(3)->create();
         Order::factory(50)->create();
         Unilav::factory(100)->create();
         mansionelavorator::factory((50))->create();

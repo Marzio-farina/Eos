@@ -13,18 +13,24 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('subAppaltatrice')->nullable();
-            $table->string('commessa')->nullable();
+            $table->string('nome',100)->nullable();
+            $table->text('descrizione')->nullable();
+            $table->string('CIG',30)->nullable();
+            $table->unsignedTinyInteger('subAppaltatrice_id')->nullable();
+            // $table->foreign('subAppaltatrice_id')->references('id')->on('subAppaltatrice');
+            $table->unsignedInteger('committenza_id')->nullable();
+            // $table->foreign('committenza_id')->references('id')->on('clients');
             $table->date('invioRichiesta')->nullable();
             $table->date('ricevutaRichiesta')->nullable();
-            $table->date('sollecito1')->nullable();
-            $table->date('sollecito2')->nullable();
-            $table->date('sollecito3')->nullable();
-            $table->date('sollecito4')->nullable();
-            $table->date('sollecito5')->nullable();
-            $table->integer('stato')->default('0');
+            $table->unsignedTinyInteger('sollecito_id')->nullable();
+            // $table->foreign('sollecito_id')->references('id')->on('solleciti');
+            $table->unsignedTinyInteger('statoCommessa_id')->default('0');
+            // $table->foreign('statoCommessa_id')->references('id')->on('statoCommessa');
             $table->date('dataInvioAlCSE')->nullable();
-            $table->string('referenteCebat')->nullable();
+            $table->unsignedTinyInteger('referentiCebat_id')->nullable();
+            $table->foreign('referentiCebat_id')->references('id')->on('cebat_contacts');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

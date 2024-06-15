@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,18 +18,18 @@ class OrderFactory extends Factory
     public function definition(): array
     {
         return [
-            'subAppaltatrice'=>fake()->sentence(2),
-            'commessa'=>fake()->sentence(2),
+            'nome'=>Str::limit(fake()->name, 100),
+            'descrizione'=>Str::limit(fake()->sentence, 150),
+            'CIG' => Str::limit(fake()->text(30), 30),
+            'subAppaltatrice_id'=>fake()->numberBetween(1, 10),
+            'committenza_id'=>fake()->numberBetween(1, 3),
             'invioRichiesta'=>fake()->date('Y_m_d'),
             'ricevutaRichiesta'=>fake()->date('Y_m_d'),
-            'sollecito1'=>fake()->date('Y_m_d'),
-            'sollecito2'=>fake()->date('Y_m_d'),
-            'sollecito3'=>fake()->date('Y_m_d'),
-            'sollecito4'=>fake()->date('Y_m_d'),
-            'sollecito5'=>fake()->date('Y_m_d'),
-            'stato'=>fake()->numberBetween(0, 3),
+            'sollecito_id'=>fake()->numberBetween(1, 3),
+            'statoCommessa_id'=>fake()->numberBetween(1, 3),
             'dataInvioAlCSE'=>fake()->date('Y_m_d'),
-            'commessa'=>fake()->sentence(10),
+            'referentiCebat_id'=>fake()->numberBetween(1, 3),
+            'user_id'=>fake()->numberBetween(1, 40),
         ];
     }
 }
