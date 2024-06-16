@@ -14,7 +14,7 @@ class Operator extends Model
         'nome',
         'cognome',
         'unilav_id',
-        'mansioneLavoratore_id',
+        'mansione_lavorators_id',
         'idoneitàSanitaria',
         'formazioneBase',
         'informazione',
@@ -59,9 +59,12 @@ class Operator extends Model
         'documentoDiRiconoscimento',
     ];
 
-    public function unilav()
-    {
+    public function unilav(){
         return $this->belongsTo(Unilav::class, 'unilav_id');
+    }
+
+    public function mansione(){
+        return $this->belongsTo(mansionelavorator::class, 'mansione_lavorators_id');
     }
 
 }
