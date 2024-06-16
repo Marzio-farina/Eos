@@ -32,11 +32,6 @@ class CampoDettaglio extends Component
         $this->selectedKey = $selectedKey;
         switch ($selectedKey) {
             case "03_Attestati_di_formazione":
-                $this->filteredDettaglio = Operator::select('id', 'nome', 'cognome')->get();
-                $this->dispatch('Option', [
-                    'selectedKey' => $selectedKey,
-                ]);
-                break;
             case "Personale":
                 $this->filteredDettaglio = Operator::select('id', 'nome', 'cognome')->get();
                 $this->dispatch('Option', [
