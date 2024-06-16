@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-8 text-center opzioneVidimazione">
-        <select id="operator-select">
+        <select id="operator-select" wire:change="OperatoreSelezionato($event.target.value)">
             <option value="" selected disabled></option>
             @foreach ($filteredDettaglio as $singoloDettaglio)
                 <option value="{{ $singoloDettaglio->id }}">

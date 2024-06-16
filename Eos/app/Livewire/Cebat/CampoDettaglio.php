@@ -34,9 +34,7 @@ class CampoDettaglio extends Component
             case "03_Attestati_di_formazione":
             case "Personale":
                 $this->filteredDettaglio = Operator::select('id', 'nome', 'cognome')->get();
-                $this->dispatch('Option', [
-                    'selectedKey' => $selectedKey,
-                ]);
+                $this->dispatch('Option');
                 break;
             case "Generale":
                 $this->filteredDettaglio = SubContractor::all();
@@ -84,6 +82,10 @@ class CampoDettaglio extends Component
             $operatore->delete();
             $this->dispatch('filterDettaglio', $this->selectedKey);
         }        
+    }
+
+    public function OperatoreSelezionato($selectedId){
+        $this->dispatch('OperatoreSelezionato', $selectedId);
     }
 }
 

@@ -15,8 +15,7 @@ class PersonaleCampoDettaglio extends Component
     public $selectedKey;
     public $selectedOperatorId;
 
-    public function render()
-    {
+    public function render(){
         return view('livewire.cebat.personale-campo-dettaglio', 
         [
             'showFormAdd' => $this->showFormAdd,
@@ -25,16 +24,14 @@ class PersonaleCampoDettaglio extends Component
     }
     
     #[On('AddForm')]
-    public function handleAddForm($params)
-    {
+    public function handleAddForm($params){
         $this->resetForm();
         $this->showFormAdd = $params['showFormAdd'];
         $this->selectedKey = $params['selectedKey'];
     }
 
     #[On('EditForm')]
-    public function handleEditForm($params)
-    {
+    public function handleEditForm($params){
         if (array_key_exists('operatorId', $params)) {
             $this->showFormEdit = $params['showFormEdit'];
             $this->selectedOperatorId = $params['operatorId'];
@@ -47,8 +44,7 @@ class PersonaleCampoDettaglio extends Component
         }
     }
 
-    public function retrieveOperator($operatorId)
-    {
+    public function retrieveOperator($operatorId){
         $operator = Operator::find($operatorId);
         if ($operator) {
             $this->nome = $operator->nome;
@@ -70,8 +66,7 @@ class PersonaleCampoDettaglio extends Component
         
     }
 
-    public function update()
-    {
+    public function update(){
         $operator = Operator::find($this->selectedOperatorId);
         if ($operator) {
             $operator->update([
@@ -84,8 +79,7 @@ class PersonaleCampoDettaglio extends Component
         }
     }
 
-    public function resetForm()
-    {
+    public function resetForm(){
         $this->nome = '';
         $this->cognome = '';
         $this->selectedOperatorId = null;

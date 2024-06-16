@@ -12,14 +12,17 @@ class Option extends Component
     public $scadenzaUnilav;
     public $option = [];
 
-    public function render()
-    {
+    public function render(){
         $this->opzioniOperatore = Operator::all();
         return view('livewire.cebat.option');
     }
 
+    public function mount(){
+        $this->filterOption();
+    }
+
     #[On('Option')]
-    public function filterOption($selectedKey) {
+    public function filterOption() {
 
         $columnsToExclude = [
             'id', 
@@ -29,7 +32,7 @@ class Option extends Component
             'updated_at',
         ];
 
-        $filteredAttributes = $this->opzioniOperatore->flatMap(function ($operator) use ($columnsToExclude) {
+        $filteredAttributes = collect($this->opzioniOperatore)->flatMap(function ($operator) use ($columnsToExclude) {
             return collect($operator->getAttributes())->keys()->filter(function ($key) use ($columnsToExclude) {
                 return !in_array($key, $columnsToExclude);
             });
@@ -37,4 +40,9 @@ class Option extends Component
 
         $this->option = $filteredAttributes;
     }
+
+    // public function optionForm($selectedOption){
+        // dd($selectedOption);
+        // $this->dispatch('optionFormSelected', $selectedOption);
+    // }
 }
