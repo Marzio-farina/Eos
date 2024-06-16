@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('unilavs', function (Blueprint $table) {
             // $table->id();
             $table->unsignedTinyInteger('id')->autoIncrement()->primary();
-            $table->boolean('presente');
+            $table->string('tipologia',150);
             $table->date('scadenza');
             $table->timestamps();
         });

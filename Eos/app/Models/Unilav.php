@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Unilav extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'tipologia',
+        'scadenza',        
+    ];
 }

@@ -3,11 +3,11 @@
         @if($showForm)
             <form wire:submit.prevent="{{ $selectedOption ? 'update' : 'store' }}">
                 <div class="inputNuovoOperatore">
-                    <label for="nome">Nome:</label>
-                    <input type="text" wire:model="nome">
+                    <label>{{$testoCampo1}} :</label>
+                    <input type="text" wire:model="valoreCampo1">
                 </div>
                 <div class="inputNuovoOperatore">
-                    <label for="cognome">Cognome:</label>
+                    <label>Cognome:</label>
                     <input type="text" wire:model="cognome">
                 </div>
                 <div class="text-center">

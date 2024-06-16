@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,7 @@ class UnilavFactory extends Factory
     public function definition(): array
     {
         return [
-            'presente'=>fake()->numberBetween(0, 1),
+            'tipologia'=>Str::limit(fake()->text(100), 100),
             'scadenza'=>fake()->date('Y_m_d'),
         ];
     }

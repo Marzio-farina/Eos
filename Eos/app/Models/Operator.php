@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Unilav;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Operator extends Model
 {
@@ -57,5 +58,10 @@ class Operator extends Model
         'formazioneProfiloZ',
         'documentoDiRiconoscimento',
     ];
+
+    public function unilav()
+    {
+        return $this->belongsTo(Unilav::class, 'unilav_id');
+    }
 
 }

@@ -41,8 +41,7 @@ class Option extends Component
         $this->option = $filteredAttributes;
     }
 
-    // public function optionForm($selectedOption){
-        // dd($selectedOption);
-        // $this->dispatch('optionFormSelected', $selectedOption);
-    // }
+    public function optionForm($selectedOption){
+        $this->dispatch('optionFormSelected', $selectedOption);
+    }
 }
