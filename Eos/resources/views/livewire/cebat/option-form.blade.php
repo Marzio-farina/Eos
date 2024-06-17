@@ -1,20 +1,32 @@
 <div class="row opzioneVidimazione">
-    <div class="col-7">
+    <div class="col-8 ">
         @if($showForm)
             <form wire:submit.prevent="{{ $campi && $campi[0]['value'] ? 'update' : 'store' }}">
                 @foreach($campi as $campo)
                     @if($campo['label'])
                         <div class="inputNuovoOperatore">
-                            <label>{{ $campo['label'] }} :</label>
-                            <input type="text" wire:model.lazy="campo['value']" value="{{$campo['value']}}">
+                            @if ($campo['value'] == 1 || $campo['value'] == 0 || $campo['label'] == "")
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" {{ $campo['value'] == 0 ? 'checked' : '' }}>
+                                <label class="btn btn-outline-primary" for="btnradio1">Assente</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" {{ $campo['value'] == 1 ? 'checked' : '' }}>
+                                <label class="btn btn-outline-primary" for="btnradio2">Presente</label>                   
+                            @else
+                                <label>{{ $campo['label'] }} :</label>
+                                <input type="text" wire:model.lazy="campo['value']" value="{{$campo['value']}}">
+                            @endif                            
                         </div>
                     @endif
                 @endforeach
-                <div class="text-center">
-                    <button type="submit">
-                        {{ $campi && $campi[0]['value'] ? 'Modifica' : 'Crea' }}
-                    </button>
-                </div>
+                @if ($campo['value'] == 1 || $campo['value'] == 0)
+                    
+                @else  
+                    <div class="text-center">
+                        <button type="submit">
+                            {{ $campi && $campi[0]['value'] ? 'Modifica' : 'Crea' }}
+                        </button>
+                    </div>
+                @endif
             </form>
         @endif
     </div>
