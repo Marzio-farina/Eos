@@ -4,10 +4,10 @@ namespace App\Livewire\Cebat;
 
 use Livewire\Component;
 use App\Models\car;
+use App\Models\general;
 use App\Models\Operator;
 use App\Models\po;
 use App\Models\scaffolding;
-use App\Models\SubContractor;
 use Livewire\Attributes\On;
 
 class CampoDettaglio extends Component
@@ -19,25 +19,24 @@ class CampoDettaglio extends Component
     public $selectedKey;
     public $selectedOperatorId;
 
-    public function render()
-    {
+    public function render(){
         return view('livewire.cebat.campo-dettaglio', [
             'filteredDettaglio' => $this->filteredDettaglio,
         ]);
     }
 
     #[On('filterDettaglio')]
-    public function filterDettaglio($selectedKey)
-    {
+    public function filterDettaglio($selectedKey){
         $this->selectedKey = $selectedKey;
         switch ($selectedKey) {
             case "03_Attestati_di_formazione":
             case "Personale":
                 $this->filteredDettaglio = Operator::select('id', 'nome', 'cognome')->get();
+                // dd($this->filteredDettaglio[0]['nome']);
                 $this->dispatch('Option');
                 break;
             case "Generale":
-                $this->filteredDettaglio = SubContractor::all();
+                $this->filteredDettaglio = general::all();
                 break;
             case "POS":
                 $this->filteredDettaglio = po::all();
@@ -66,8 +65,7 @@ class CampoDettaglio extends Component
         ]);
     }
 
-    public function toggleFormEdit($operatorId)
-    {
+    public function toggleFormEdit($operatorId){
         $this->showFormEdit = !$this->showFormEdit;
         $this->selectedOperatorId = $operatorId;
         $this->dispatch('EditForm', [

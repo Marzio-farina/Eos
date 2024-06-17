@@ -37,7 +37,6 @@ class Option extends Component
                 return !in_array($key, $columnsToExclude);
             });
         })->unique();
-
         $this->option = $filteredAttributes;
     }
 
