@@ -17,7 +17,7 @@ class scaffoldingFactory extends Factory
     public function definition(): array
     {
         return [
-            'filtroAutorizzazione'=>fake()->numberBetween(0, 1),
+            'librettoAutorizzazione'=>fake()->numberBetween(0, 1),
             'Pimus'=>fake()->numberBetween(0, 1),
             'progetto'=>fake()->numberBetween(0, 1),
             'dichiarazione'=>fake()->numberBetween(0, 1),

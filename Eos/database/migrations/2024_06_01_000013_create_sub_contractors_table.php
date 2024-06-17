@@ -14,14 +14,16 @@ return new class extends Migration
         Schema::create('sub_contractors', function (Blueprint $table) {
             $table->unsignedTinyInteger('id')->autoIncrement()->primary();
             $table->string('nome',150)->nullable();
-            $table->boolean('DVR')->default(false);
-            $table->boolean('DURC')->default(false);
-            $table->boolean('CCIA')->default(false);
-            $table->boolean('VCCIA')->default(false);
-            $table->boolean('nominaMedicoCompetente')->default(false);
-            $table->unsignedTinyInteger('POS_id')->nullable();
-            $table->boolean('nominaRLST')->default(false);
+            $table->unsignedTinyInteger('generale_id');
+            $table->foreign('generale_id')->references('id')->on('generals');
+            $table->unsignedBigInteger('operatori_id');
+            $table->foreign('operatori_id')->references('id')->on('operators');
             $table->unsignedTinyInteger('ponteggi_id')->nullable();
+            $table->foreign('ponteggi_id')->references('id')->on('scaffoldings');
+            $table->unsignedBigInteger('mezzi_id');
+            $table->foreign('mezzi_id')->references('id')->on('cars');
+            $table->unsignedTinyInteger('POS_id')->nullable();
+            $table->foreign('POS_id')->references('id')->on('pos');
             $table->timestamps();
         });
     }

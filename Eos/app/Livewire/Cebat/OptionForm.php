@@ -56,7 +56,7 @@ class OptionForm extends Component
                 break;
             case "informazione":
                 $this->campi = [
-                    ['label' => 'Presenza', 'value' => $operator->informazione ?? '']
+                    ['label' => 'Presenza2', 'value' => $operator->informazione ?? '']
                 ];
                 break;
             case "nominaRls":
@@ -166,7 +166,7 @@ class OptionForm extends Component
                 break;
             case "tesserino":
                 $this->campi = [
-                    ['label' => 'Presenza', 'value' => $operator->tesserino ?? '']
+                    ['label' => 'Presenza2', 'value' => $operator->tesserino ?? '']
                 ];
                 break;
             case "verbaleDPI":

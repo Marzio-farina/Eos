@@ -10,7 +10,7 @@ class scaffolding extends Model
     use HasFactory;
 
     protected $fillable = [
-        'filtroAutorizzazione',
+        'librettoAutorizzazione',
         'Pimus',
         'progetto',
         'dichiarazione',

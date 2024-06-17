@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('scaffoldings', function (Blueprint $table) {
             $table->unsignedTinyInteger('id')->autoIncrement()->primary();
-            $table->boolean('filtroAutorizzazione')->default(false);
+            $table->boolean('librettoAutorizzazione')->default(false);
             $table->boolean('Pimus')->default(false);
             $table->boolean('progetto')->default(false);
             $table->boolean('dichiarazione')->default(false);

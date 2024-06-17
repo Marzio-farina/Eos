@@ -19,14 +19,11 @@ class SubContractorFactory extends Factory
     {
         return [
             'nome'=>Str::limit(fake()->text(150), 150),
-            'DVR'=>fake()->numberBetween(0, 1),
-            'DURC'=>fake()->numberBetween(0, 1),
-            'CCIA'=>fake()->numberBetween(0, 1),
-            'VCCIA'=>fake()->numberBetween(0, 1),
-            'nominaMedicoCompetente'=>fake()->numberBetween(0, 1),
-            'POS_id'=>fake()->numberBetween(1, 10),
-            'nominaRLST'=>fake()->numberBetween(0, 1),
+            'generale_id'=>fake()->numberBetween(1, 10),
+            'operatori_id'=>fake()->numberBetween(1, 10),
             'ponteggi_id'=>fake()->numberBetween(1, 10),
+            'mezzi_id'=>fake()->numberBetween(1, 10),
+            'POS_id'=>fake()->numberBetween(1, 10),
         ];
     }
 }

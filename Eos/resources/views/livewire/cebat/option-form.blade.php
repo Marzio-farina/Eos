@@ -5,8 +5,8 @@
                 @foreach($campi as $campo)
                     @if($campo['label'])
                         <div class="inputNuovoOperatore">
-                            @if ($campo['value'] == 1 || $campo['value'] == 0 || $campo['label'] == "")
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" {{ $campo['value'] == 0 ? 'checked' : '' }}>
+                            @if ($campo['value'] == 1 || $campo['value'] == 0 || ( $campo['value'] == "" && $campo['label'] == "Presenza2"))
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" {{ $campo['value'] == 0 || $campo['value'] == "" ? 'checked' : '' }}>
                                 <label class="btn btn-outline-primary" for="btnradio1">Assente</label>
                             
                                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" {{ $campo['value'] == 1 ? 'checked' : '' }}>
@@ -18,7 +18,7 @@
                         </div>
                     @endif
                 @endforeach
-                @if ($campo['value'] == 1 || $campo['value'] == 0)
+                @if ($campo['value'] == 1 || $campo['value'] == 0 || ( $campo['value'] == "" && $campo['label'] == "Presenza2"))
                     
                 @else  
                     <div class="text-center">
